@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/style.min.css">
+	<title>Contact Us</title>
+	<style>
+		body {
+			color: #000;
+		}
+		.text-darkGrey {
+			color: #4c4c4c;
+		}
+		.form-control {
+			border-radius: 4px;
+			border: 1px solid #979797;
+			font-size: 14px;
+		}
+		.form-control::placeholder {
+			color: #9b9b9b;
+			opacity: 1;
+		}
+		.form-control::-moz-placeholder {
+			color: #9b9b9b;
+			opacity: 1;
+		}		
+		@media (max-width: 1024px) {
+			h4, .h4 {
+				font-size: 18px !important;
+			}
+			h5, .h5 {
+				font-size: 16px !important;
+			}
+			h6, .h6 {
+				font-size: 14px !important;
+			}
+		}
+	</style>
+</head>	
+<body class="contactPage">
+	<header class="navbar navbar-expand-lg navbar-light bg-white fixed-top" id="header">
+		<div class="container">
+			<a class="navbar-brand" href="./">
+				<img class="img-fluid" src="./images/logo-black.svg" alt="logo">
+			</a> 
+
+			<button class="navbar-toggler" type="button" data-toggle="offcanvas" aria-label="Toggle Navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="navbar-collapse offcanvas-collapse" id="mainMenu">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="./products.html">Products</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./about.html">About us</a>
+					</li>
+					
+					<li class="nav-item active">
+						<a class="nav-link" href="./contact.html">Contact us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="clearfix p-5"></div>	
+	<div class="background d-none d-md-block"></div>	
+	<section class="container">
+	  	<div class="row">
+		    <div class="col-sm-6">
+		 		<h6 class="mb-2 mb-md-3 text-darkGrey font-bold">Contact us</h6>
+				<div class="row">
+					<h5 class="col-12 col-md-12 col-lg-12 text-nowrap">Daanish Sethi:</h5>
+					<h6 class="col-12 text-nowrap col-sm-12 col-lg-4 mobile ml-lg-0">+91 9810104879</h6>
+					<h6 class="col-12 col-sm-12 col-lg-4 ml-auto ml-lg-0">daanish@daonedecor.in</h6>
+				</div>
+
+				<div class="row">
+					<h5 class="col-12  text-nowrap">Navin Jaiswal:</h5>
+					<h6 class="col-12  text-nowrap col-sm-12 col-lg-4 mobile">+91 9818079035 </h6>
+					<h6 class="col-12   col-sm-12 col-lg-4 ml-auto ml-lg-0 "> navin@daonedecor.in</h6>
+				</div>
+
+				<h6 class="mt-4 mt-md-5 mb-3 pb-1 text-darkGrey font-bold">Request a callback</h6>
+				<form method="POST" action="" validate>
+					<div class="form-group ">
+						<label class="sr-only">Name*</label>
+						<input type="text" class="form-control" name="name" placeholder="Name" maxlength="100" required>
+					</div>
+					<div class="form-group">
+						<label class="sr-only">Email*</label>
+						<input type="email" class="form-control" name="email" placeholder="Email" maxlength="255" required>
+					</div>
+					<div class="form-group">
+						<label class="sr-only">Mobile*</label>
+						<input type="text" class="form-control" name="mobile" placeholder="Mobile Number" maxlength="10" required>
+					</div>
+					<div class="form-group">
+						<label class="sr-only">Message*</label>
+						<textarea class="form-control" name="message" placeholder="What is it that you’d like to talk about?" rows="4" required></textarea>
+					</div>	
+					<div class="form-group">
+						<button type="submit" class="btn buttonContact h3">Submit</button>
+					</div>
+				</form>
+		    </div>
+		    <div class="col-sm-6">
+		 		<h6 class="mb-2 mt-4 mt-md-0 pt-1 pt-md-0 text-darkGrey font-bold">Visit our showroom</h6>
+		 	
+		 		<address class="h4 mb-3 pb-1 address" >
+					9, Tilak Nagar Industrial
+					Area, New Delhi 110018
+				</address>
+				
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7003.32296134268!2d77.09131412474022!3d28.639906187511187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfc743d7fa2eeaf60!2sTilak+nagar+metro+station!5e0!3m2!1sen!2sin!4v1527422977368"  frameborder="0" style="border:0" class="googleMaps"></iframe>
+		    </div>
+		</div>
+	</section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<script>
+		jQuery(document).ready(function($) {
+			$('[data-toggle="offcanvas"]').on('click', function () {
+				$('body').toggleClass('menu-open');
+				$( this ).toggleClass('timesClose');
+				$('.offcanvas-collapse').toggleClass('open');		
+			});
+			$('form').submit(function( event ) {
+				//console.log(event);
+				event.preventDefault();
+				var element = this;
+				var button = {};
+				var data = {}; 
+				button.id = 'button[name=submit]';
+				button.text = 'Submit';
+
+				$(element).removeClass('has-error').removeClass('valid').removeClass('invalid');
+				$(element).find('.message').remove();
+
+				$.each( $(element).serializeArray(), function() {
+					data[this.name] = this.value;
+				});
+
+				$.ajax({
+					type: 'POST',
+					url: './contact.php',
+					data: data,
+					dataType: 'json',
+					beforeSend: function() {
+						//console.log(data);
+						//$(element).find('.btn-dismiss').hide();
+						//$(element).find(button.id).css('width', $(element).find(button.id).outerWidth()).html('<i class="fa fa-spinner fa-spin"></i>').text();
+					},
+					success: function(result) {
+						//console.log(result);
+
+						// Show message
+						if(result.messages) {
+							$(result.messages).each(function() {
+								alert( this.message );
+							});
+						}
+
+						if( result.status === 'success' ) {
+							$('form')[0].reset();
+						}
+					},
+					error: function(request, textStatus, errorThrown) {
+						//console.log(request);
+						//$(element).find('.btn-dismiss').show();
+						//$(element).find(button.id).html(button.text);
+						alert('ERROR: Unable to send message.');
+					}
+				});
+				return false;
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+diff a/index.html b/index.html	(rejected hunks)
+@@ -68,22 +68,22 @@
+ 	</section>
+ 
+ 	<section class="container products">
+-		<div class="card-deck ">
+-			<div class=" card mb-2 mx-1 zoom">
++		<div class="card-deck">
++			<div class="card mb-2 mx-0" data-aos="fade-right">
+ 				<h6 class="card-title text-center h1 font-regular mb-0 d-block d-md-none">Crewel embroidery</h6>
+ 				<img alt="Card image cap" class="img-fluid" src="./images/crewelEmbroidery.png">
+ 				<div class="card-body py-0">
+ 					<h6 class="card-title text-center h1 font-regular mb-0 d-none d-md-block">Crewel embroidery</h6>
+ 				</div>
+ 			</div>
+-			<div class="card mb-2 mx-1 zoom">
++			<div class="card mb-2 mx-0" data-aos="zoom-out">
+ 				<h6 class="card-title text-center h1 font-regular mb-0 d-block d-md-none ">Croatia work</h6>
+ 				<img alt="Card image cap" class="img-fluid" src="./images/croatiaWork.png">
+ 				<div class="card-body py-0">
+ 					<h6 class="card-title text-center h1 font-regular mb-0 d-none d-md-block">Croatia work</h6>
+ 				</div>
+ 			</div>
+-			<div class="card mb-2 mx-1 zoom">
++			<div class="card mb-2 mx-0" data-aos="fade-left">
+ 				<h6 class="card-title text-center h1 font-regular mb-0 d-block d-md-none ">Woven work</h6>
+ 				<img alt="Card image cap" class="img-fluid" src="./images/wovenWork.png">
+ 				<div class="card-body py-0">
+@@ -92,14 +92,14 @@
+ 			</div>
+ 		</div>
+ 		<div class="card-deck">
+-			<div class="card mb-2 mx-2 zoom">
++			<div class="card mb-2 mx-0" data-aos="fade-right">
+ 				<h6 class="card-title text-center h1 font-regular mb-0 d-block d-md-none">Knitting work</h6>
+ 				<img alt="Card image cap" class="img-fluid" src="./images/knittingWork.png">
+ 				<div class="card-body py-0">
+ 					<h6 class="card-title text-center h1 font-regular mb-0 d-none d-md-block">Knitting work</h6>
+ 				</div>
+ 			</div>
+-			<div class="card mb-2 mx-2 zoom">
++			<div class="card mb-2 mx-0" data-aos="fade-left">
+ 				<h6 class="card-title text-center h1 font-regular mb-0 d-block d-md-none ">Intricate embroidery</h6>
+ 				<img alt="Card image cap" class="img-fluid" src="./images/intricateEmbroidery.png">
+ 				<div class="card-body py-0">

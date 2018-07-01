@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<title>Products | Da One Décor</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">	
+	<link rel="stylesheet" href="./css/style.min.css">	
+</head>
+<body>
+	<div class="products-left-logo">
+	<header class="navbar navbar-expand-lg navbar-light bg-white fixed-top" id="header">
+		<div class="container">
+			<a class="navbar-brand" href="./">
+				<img class="img-fluid" src="./images/logo-black.svg" alt="logo">
+			</a> 
+
+			<button class="navbar-toggler" type="button" data-toggle="offcanvas" aria-label="Toggle Navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="navbar-collapse offcanvas-collapse" id="mainMenu">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="./products.html">Products</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./about.html">About us</a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="./contact.html">Contact us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="clearfix p-5"></div>		
+	<section class="container-fluid text-center mt-0 mt-sm-5 pt-4 pt-sm-5 pb-5" id="cushions">
+		<h1 class="font-fancy text-black display-2 mt-1 mb-4 pb-3">Cushions</h1>
+		<div class="row mt-0 pt-0 mt-sm-4 pt-sm-3">
+			<div class="col-12">
+				<div class="owl-carousel owl-theme ">
+				</div>
+			</div>
+		</div>
+	</section> 
+
+	<section class="container-fluid text-center mt-2 mt-sm-5 py-5" id="quilts">
+		<h1 class="font-fancy text-black display-2 mt-1 mb-4 pb-3">Quilts</h1>
+		<div class="row mt-4 pt-3">
+			<div class="col-12">
+				<div class="owl-carousel owl-theme">				
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container-fluid text-center mt-2 mt-sm-5 py-5" id="throws">
+		<h1 class="font-fancy text-black display-2 mt-1 mb-4 pb-3">Throws</h1>
+		<div class="row mt-4 pt-3">
+			<div class="col-12 pb-4">
+				<div class="owl-carousel owl-theme">
+				</div>
+			</div>
+		</div>
+	</section>
+  
+<footer id="footer">
+		<div class="container h-10 ">
+			<div class="row">
+		        <div class="col-11 mx-auto py-sm-5 pb-5 mb-5">
+			        <h1 class="display-2 font-title mb-3">The new standard in home decor</h1>
+
+			        <a class="btn btn-light font-medium h3 mt-3 mb-1" href="./contact.html">Get in Touch</a>          
+		        </div>
+		    </div><div class="mb-2 mb-md-2"></div>
+			<div class="row mb-3 text-sm-center copyright align-items-left mt-5 pt-5">
+				<div class="col-12 col-md-8 font-regular h6 text-md-left mb-3 mb-sm-0 ">
+					All images & content is property of <img class="img-fluid logo" src="./images/logo-white.svg" alt="logo">
+				</div>
+				<div class="col-12 col-md-4 font-regular h6 text-md-right mb-3">
+					Made by <a href="http://theintrfcr.com" target="_blank">The Intrfcr</a>
+				</div>
+			</div>
+		</div>
+	</footer>   
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.1/popper.min.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script-->
+	<script>
+		$(document).ready(function() {
+			$('.scroll').click(function(e) {
+				e.preventDefault();
+				$('body').removeClass('menu-open');
+				$( '[data-toggle="offcanvas"]').removeClass('timesClose');
+				$('.offcanvas-collapse').removeClass('open');
+				$('body,html').animate({scrollTop: $(this.hash).offset().top}, 1000 );
+			});		
+
+			$('[data-toggle="offcanvas"]').on('click', function () {
+				$('body').toggleClass('menu-open');
+				$( this ).toggleClass('timesClose');
+				$('.offcanvas-collapse').toggleClass('open');		
+			});
+
+			for( var i=1;i<=92;i++) {
+		 		var row = '<div class="item">';
+		 		row += '<img class="img-fluid owl-lazy" data-src="./images/cushions'+i+'.png" alt="cushion '+i+'">';
+		 		row += '</div>';
+		 		$( '#cushions .owl-carousel').append( row );
+		 	}
+			
+		 	for( var j=4;j<=35;j++) {
+		 		var row = '<div class="item">';
+		 		row += '<img class="img-fluid owl-lazy" data-src="./images/quilts'+j+'.png" alt="quilts'+j+'">';
+		 		row += '</div>';
+		 		$( '#quilts .owl-carousel').append( row );
+		 	}
+            
+		 	for( var i=1;i<=3;i++) {
+		 		var row = '<div class="item">';
+		 		row += '<img class="img-fluid owl-lazy" data-src="./images/throws'+i+'.png" alt="throws '+i+'">';
+		 		row += '</div>';
+		 		$( '#throws .owl-carousel').append( row );
+		 	}
+			
+			$('.owl-carousel').owlCarousel({             
+                loop: true,
+                margin: 0,
+                lazyLoad:true,
+				dots:false,
+		        responsiveClass:true,
+                nav:true,						
+                responsive: {
+                  0: {
+                    items: 1,   
+					stagePadding: 50,
+					lazyLoadEager: 1,
+                  },
+                  600: {
+                    items: 3,
+					lazyLoadEager: 3,
+                  },
+                  960: {
+                    items:3,
+					lazyLoadEager: 3,
+				  },
+                  1200: {
+                    items:4,
+					lazyLoadEager: 4,
+                  }
+                }
+            });
+
+			/*var cushionsOwl = $('#cushions .owl-carousel');
+			cushionsOwl.on('mousewheel', '.owl-stage', function (e) {
+			    if (e.deltaY>0) {
+			        cushionsOwl.trigger('next.owl');
+			    } else {
+			        cushionsOwl.trigger('prev.owl');
+			    }
+			    e.preventDefault();
+			});
+			var quiltsOwl = $('#quilts .owl-carousel');
+			quiltsOwl.on('mousewheel', '.owl-stage', function (e) {
+			    if (e.deltaY>0) {
+			        quiltsOwl.trigger('next.owl');
+			    } else {
+			        quiltsOwl.trigger('prev.owl');
+			    }
+			    e.preventDefault();
+			});
+			var throwsOwl = $('#throws .owl-carousel');
+			throwsOwl.on('mousewheel', '.owl-stage', function (e) {
+			    if (e.deltaY>0) {
+			       throwsOwl.trigger('next.owl');
+			    } else {
+			        throwsOwl.trigger('prev.owl');
+			    }
+			    e.preventDefault();
+			});*/
+   		});
+	</script>
+</body>
+</html>
